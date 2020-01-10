@@ -1,6 +1,12 @@
 # react-array-to-tree
 Make a nested tree of React components out of a flat array
 
+## Installation
+
+`npm i react-array-to-tree` or `yarn add react-array-to-tree`
+
+## Usage
+
 If you have a React application with multiple contexts you might end up with
 a deep nested tree of context providers, something like this:
 
