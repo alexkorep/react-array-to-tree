@@ -1,22 +1,17 @@
 import React from 'react';
 
-const BuildComponetTree = (providers) => {
-  if (providers.length === 1) {
-    return providers[0][0];
-  }
-  const [A, paramsA] = providers.shift();
-  const [B, paramsB] = providers.shift();
+const BuildProviderTree = (providers) => {
+  return function ProviderTree(props) {
+    const lastIndex = providers.length - 1;
+    let children = props.children;
 
-  return BuildComponetTree([
-    [({ children }) => (
-      <A {...(paramsA || {})}>
-        <B {...(paramsB || {})}>
-          {children}
-        </B>
-      </A>
-    )],
-    ...providers,
-  ]);
+    for (let i = lastIndex; i >= 0; i--) {
+      const element = providers[i];
+      children = React.cloneElement(element, undefined, children);
+    }
+
+    return children;
+  };
 };
 
-export default BuildComponetTree;
+export default BuildProviderTree;
