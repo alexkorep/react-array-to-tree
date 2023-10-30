@@ -1,1 +1,1 @@
-export default function BuildProviderTree(...providers: React.ReactElement[]);
+export default function BuildProviderTree(providers: React.ReactElement[]);
