@@ -1,12 +1,12 @@
 {
   "name": "react-array-to-tree",
-  "version": "2.0.1",
+  "version": "2.0.2",
   "description": "Make a nested tree of React components out of a flat array",
   "main": "index.js",
   "repository": "git@github.com:alexkorep/react-array-to-tree.git",
   "author": "Alexey Korepanov <alexkorep@gmail.com>",
   "license": "MIT",
   "peerDependencies": {
-    "react": "^16.12.0"
+    "react": "^18"
   }
 }
