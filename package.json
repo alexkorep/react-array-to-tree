@@ -7,6 +7,6 @@
   "author": "Alexey Korepanov <alexkorep@gmail.com>",
   "license": "MIT",
   "peerDependencies": {
-    "react": "^16.2.0 || ^17 || ^18 || ^19"
+    "react": "^16.12.0 || ^17 || ^18 || ^19"
   }
 }
